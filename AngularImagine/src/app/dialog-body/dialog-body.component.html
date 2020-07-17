@@ -1,0 +1,12 @@
+<h2 [innerHTML]="categoryTitle" mat-dialog-title></h2>
+
+<mat-dialog-content>
+
+<label [style.display]="this.showCategory ? 'block':'none'">Category: <input (blur)="updateCategory(newCategoryId.value)" type="text" #newCategoryId /></label><br />
+<label>Deed: <input (blur)="updateDeed(newDeedId.value)" type="text" #newDeedId /></label><br />
+<label>Hint: <input (blur)="updateHint(newHintId.value)" type="text" #newHintId /></label>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Close</button>
+</mat-dialog-actions>

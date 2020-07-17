@@ -1,0 +1,21 @@
+<h2 [innerHTML]="categoryTitle" mat-dialog-title></h2>
+<h3 [innerHTML]="textTitle" mat-dialog-title></h3>
+
+<mat-dialog-content>
+
+  <label>Info: <textarea style="min-height:80px; max-height:80px; min-width:350px" (blur)="updateInfo(infoId.value)" [value]="valueInfo" #infoId ></textarea></label><br />
+  <label>Tooltip: <textarea style="min-height:80px; max-height:80px; min-width:350px" (blur)="updateTooltip(tooltipId.value)" [value]="valueTooltip" type="text" #tooltipId ></textarea></label>
+  <br />
+  <label>Has Connector? <input (blur)="updateHasConnector(hasConnectorId.checked)" [checked]="valueHasConnector" type="checkbox" #hasConnectorId /></label>
+  <br />
+  <label>Is Start? <input (blur)="updateIsStart(isStartId.checked)" type="checkbox" [checked]="valueIsStart" #isStartId /></label>
+  <br />
+  <label>Is End? <input (blur)="updateIsEnd(isEndId.checked)" type="checkbox" [checked]="valueIsEnd" #isEndId /></label>
+  <br />
+  <label>Has Next? <input (blur)="updateHasNext(hasNextId.checked)" type="checkbox" [checked]="valueHasNext" #hasNextId /></label>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Save and Close</button>
+  <button class="mat-raised-button" (click)="cancel()">Cancel</button>
+</mat-dialog-actions>

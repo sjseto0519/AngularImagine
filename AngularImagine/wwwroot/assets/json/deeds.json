@@ -1,0 +1,42 @@
+{
+    "JQuery selectors":[
+        {
+            "deed":"Get the HTML DOM element from a selector that finds the class named 'divEnabled'",
+            "hint":"use brackets"
+        },
+        {
+            "deed":"Get the fifth element of all divs with the class 'blue'",
+            "hint":"use eq"
+        },
+        {
+            "deed":"Create a div with a width of 1000 pixels",
+            "hint":"use angle brackets"
+        },
+        {
+            "deed":"Wrap a ul with a div",
+            "hint":""
+        }
+    ],
+    "ES6":[
+        {
+            "deed":"Write an arrow function that doubles a number",
+            "hint":"=>"
+        }
+    ],
+    "Knockout":[
+        {
+            "deed":"In the developer console, find the view model that is bound to a DOM element",
+            "hint":""
+        }
+    ],
+    "SCSS":[
+        {
+            "deed":"Use a variable for the width and height of a div",
+            "hint":"$_____:"
+        },
+        {
+            "deed":"Calculate the border radius of a div using a variable",
+            "hint":"border-radius"
+        }
+    ]
+}

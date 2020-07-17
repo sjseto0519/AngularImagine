@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\app\Directives\tooltip.directive.ts" />
+    <None Remove="src\app\Interceptors\CustomInterceptor.ts" />
+    <None Remove="src\app\Interfaces\ApiModel.ts" />
+    <None Remove="src\app\ViewModels\Category.ts" />
+    <None Remove="src\app\ViewModels\Deed.ts" />
+    <None Remove="src\app\ViewModels\SystemInfo.ts" />
+    <None Remove="src\app\ViewModels\SystemRow.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\Directives\tooltip.directive.ts" />
+    <TypeScriptCompile Include="src\app\Interceptors\CustomInterceptor.ts" />
+    <TypeScriptCompile Include="src\app\Interfaces\ApiModel.ts" />
+    <TypeScriptCompile Include="src\app\ViewModels\SystemRow.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\ViewModels\SystemInfo.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\ViewModels\Category.ts" />
+    <TypeScriptCompile Include="src\app\ViewModels\Deed.ts" />
+  </ItemGroup>
+
+</Project>
